@@ -393,7 +393,6 @@ void Group::onButtonPress(GdkEventButton* event)
 		gtk_widget_show(pinToggle);
 
 		gtk_menu_attach(GTK_MENU (menu), GTK_WIDGET(launchAnother), 0, 1, 0, 1);
-		gtk_menu_attach(GTK_MENU (menu), GTK_WIDGET(separator), 1, 2, 0, 2);
 		gtk_menu_attach(GTK_MENU (menu), GTK_WIDGET(pinToggle), 1, 2, 0, 2);
 
 		g_signal_connect(G_OBJECT(launchAnother), "activate",
@@ -428,7 +427,6 @@ void Group::onButtonPress(GdkEventButton* event)
 		gtk_widget_show(pinToggle);
 
 		gtk_menu_attach(GTK_MENU (menu), GTK_WIDGET(launchAnother), 0, 1, 0, 1);
-		gtk_menu_attach(GTK_MENU (menu), GTK_WIDGET(separator), 1, 2, 0, 2);
 		gtk_menu_attach(GTK_MENU (menu), GTK_WIDGET(pinToggle), 1, 2, 0, 2);
 
 		g_signal_connect(G_OBJECT(launchAnother), "activate",

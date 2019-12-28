@@ -385,12 +385,10 @@ void Group::onButtonPress(GdkEventButton* event)
 		GtkWidget* menu = gtk_menu_new();
 
 		GtkWidget* launchAnother = gtk_menu_item_new_with_label("Launch");
-		GtkWidget* separator = gtk_separator_menu_item_new();
 		GtkWidget* pinToggle = mPinned ? 
 			gtk_menu_item_new_with_label("Unpin") :
 			gtk_menu_item_new_with_label("Pin this app");
 
-		gtk_widget_show(separator);
 		gtk_widget_show(launchAnother);
 		gtk_widget_show(pinToggle);
 
@@ -422,12 +420,10 @@ void Group::onButtonPress(GdkEventButton* event)
 		GtkWidget* menu = Wnck::getActionMenu(mWindows.get(mTopWindowIndex));
 
 		GtkWidget* launchAnother = gtk_menu_item_new_with_label("Launch another");
-		GtkWidget* separator = gtk_separator_menu_item_new();
 		GtkWidget* pinToggle = mPinned ? 
 			gtk_menu_item_new_with_label("Unpin") :
 			gtk_menu_item_new_with_label("Pin this app");
 
-		gtk_widget_show(separator);
 		gtk_widget_show(launchAnother);
 		gtk_widget_show(pinToggle);
 
